@@ -25,7 +25,7 @@ export const getUser = () => async (dispatch) => {
 
     try {
         // if no token, then try to get user
-        const res = await axios.get(`${config.apiUrl}/auth`)
+        const res = await axios.get(`https://book-nugget.herokuapp.com/auth`)
 
         // response from server contains user info
         dispatch({

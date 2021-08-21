@@ -17,7 +17,6 @@ const Home = ({ isAuthenticated, login }) => {
         const demoUser = { email: "demousernugget@gmail.com", 
             password: "booknugget"
         }
-        console.log("hello")
         login(demoUser)
     }
 

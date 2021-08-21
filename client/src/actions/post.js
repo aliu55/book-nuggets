@@ -153,7 +153,6 @@ export const addComment = (postId, formData) => async (dispatch) => {
         })
     
     } catch (err) {
-        console.log(err.response)
         dispatch({
             type: POST_ERROR,
             payload: { msg: err.response.statusText, status: err.response.status }

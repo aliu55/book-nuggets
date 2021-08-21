@@ -90,7 +90,9 @@ export const login = ({ email, password }) => async (dispatch) => {
         })
 
         // send request to login user
-        const res = await axios.post(`${config.apiUrl}/auth`, body, config.apiConfig)
+        // const res = await axios.post(`${config.apiUrl}/auth`, body, config.apiConfig)
+        console.log("LOGIN")
+        const res = await axios.post(`https://book-nugget.herokuapp.com/auth`, body, config.apiConfig)
 
         // response from server contains the user token
         dispatch({

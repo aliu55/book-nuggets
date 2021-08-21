@@ -25,7 +25,9 @@ export const getUser = () => async (dispatch) => {
 
     try {
         // if no token, then try to get user
-        const res = await axios.get(`https://book-nugget.herokuapp.com/auth`)
+        const res = await axios.get(`${config.apiUrl}/auth`)
+
+        console.log(config.apiUrl)
 
         // response from server contains user info
         dispatch({
@@ -90,9 +92,7 @@ export const login = ({ email, password }) => async (dispatch) => {
         })
 
         // send request to login user
-        // const res = await axios.post(`${config.apiUrl}/auth`, body, config.apiConfig)
-        console.log("LOGIN")
-        const res = await axios.post(`https://book-nugget.herokuapp.com/auth`, body, config.apiConfig)
+        const res = await axios.post(`${config.apiUrl}/auth`, body, config.apiConfig)
 
         // response from server contains the user token
         dispatch({

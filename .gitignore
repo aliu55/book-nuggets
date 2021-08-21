@@ -1,4 +1,4 @@
 /node_modules
-config/default.json
+config/keysDev.js
 
 .DS_Store

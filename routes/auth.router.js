@@ -1,6 +1,6 @@
 require('dotenv').config()
 const router = require('express-promise-router')()
-const config = require('config')
+const config = require('../config/keys')
 
 const auth = require('../middleware/auth')
 const User = require('../models/User.schema')
@@ -57,7 +57,7 @@ router.post('/',
 
             jwt.sign(
                 payload,
-                config.get("JWT_SECRET"),
+                config.JWT_SECRET,
                 { expiresIn: 360000},
                 (err, token) => {
                     if (err) throw err

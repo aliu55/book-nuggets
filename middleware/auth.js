@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const config = require('config')
+const config = require('../config/keys')
 
 const auth = (req, res, next) => {
     // get token from header
@@ -12,7 +12,7 @@ const auth = (req, res, next) => {
 
     // verify token
     try {
-        const decoded = jwt.verify(token, config.get('JWT_SECRET'))
+        const decoded = jwt.verify(token, config.JWT_SECRET)
 
         // this sets the user field in request (req.user) to the user in the token
         // now if we ever want the user's id we can be access it in ANY protected route via req.user.id

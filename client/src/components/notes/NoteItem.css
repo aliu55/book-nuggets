@@ -1,0 +1,46 @@
+#insight {
+    --type-color: var(--insight-color);
+}
+
+#question {
+    --type-color: var(--question-color);
+}
+
+#quote {
+    --type-color: var(--quote-color);
+}
+
+.note {
+    border-left: 15px solid var(--type-color);
+    border-top: 2px solid var(--type-color);
+    border-bottom: 2px solid var(--type-color);
+    border-right: 2px solid var(--type-color);
+    /* background: rgba(172, 172, 172, 0.37); */
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 2rem;
+}
+
+.note-type {
+    border-radius: 4px;
+    background: var(--type-color);
+    padding: 2px 5px;
+    width: 4.7rem;
+    text-align: center;
+    font-size: 13px;
+    cursor: default;
+}
+
+.note-date {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.459);   
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 15px;
+    color: rgba(109, 109, 109, 0.801);
+    cursor: default;
+}
+
+.note-text {
+    margin: 1.5rem 0;
+    color: #333;
+}

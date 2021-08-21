@@ -1,0 +1,41 @@
+.book-form.modal-center {
+    position: fixed;
+    top: 300px;
+}
+
+.book-form label {
+    font-size: 1.5rem;
+}
+
+.book-form .form-group {
+    margin: 1rem 0;
+}
+.book-form .form-group input {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    border-bottom: 1px solid #636363b9;
+    outline: none;
+    width: 400px;
+}
+
+.book-form .book-btn {
+    padding: 8px 20px;
+    margin-right: 1rem;
+    border-radius: 19px;
+    border: none;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-success {
+    background: rgb(114, 156, 121);
+}
+
+.btn-danger {
+    background: rgb(224, 101, 101);
+}
+
+.book-form .book-btn:hover {
+    opacity: 0.9;
+}

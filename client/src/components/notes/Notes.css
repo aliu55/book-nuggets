@@ -1,0 +1,28 @@
+.note-add {
+    background: rgb(159, 190, 113); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.note-add-icon {
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+.blur {
+    filter: blur(8px);
+}
+
+.blur div {
+    pointer-events: none;
+}

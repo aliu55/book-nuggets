@@ -1,0 +1,45 @@
+.home {
+    position: relative;
+    background: url('../../img/book.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    color: white;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-inner-title {
+    font-size: 3rem;
+}
+
+.home-inner-description {
+    font-size: 1rem;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+.demo-login {
+    margin-left: 1rem;
+    cursor: pointer;
+}

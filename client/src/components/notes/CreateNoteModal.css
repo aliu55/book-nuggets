@@ -1,0 +1,58 @@
+.modal-center {
+    position: fixed;
+    top: 150px;
+}
+
+.radio-options {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 450px;
+}
+
+.radio {
+    position: relative;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    margin: 0.5rem 1rem;
+    flex: 1;
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.radio .radio-label {
+    font-size: 1rem;
+    color: #b6b6b6;
+    pointer-events: none;
+    padding: 0.4rem 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio input:checked + label {
+    background: #719B78;
+    font-weight: 500;
+    color: #fff;
+}
+
+.book-form {
+    margin: 0 auto;
+}
+
+.type-text {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 0.5rem;
+}
+

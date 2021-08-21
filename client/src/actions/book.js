@@ -15,7 +15,8 @@ import {
 export const getBooks = () => async (dispatch) => {
     try {
 
-        const res = await axios.get(`${config.apiUrl}/books`)
+        // const res = await axios.get(`${config.apiUrl}/books`)
+        const res = await axios.get(`https://book-nugget.herokuapp.com/books`)
 
         dispatch({
             type: GET_BOOKS,
